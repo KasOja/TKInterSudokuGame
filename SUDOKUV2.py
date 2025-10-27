@@ -112,7 +112,8 @@ class SudokuGame:
             if sorted(numbers) != [1,2,3,4,5,6,7,8,9] and 0 not in numbers:
                 self.blocks = False
                 for box in guiblocks[squares.index(block)]:
-                    box[0]["background"] = "red"
+                    if numbers.count(int(box[0].get())) > 1:
+                        box[0]["background"] = "red"
         
         if self.lines == True and self.columns == True and self.blocks == True:
             for i in self.given:
@@ -179,4 +180,5 @@ class SudokuGame:
         return sudoku
 
     
+
 game = SudokuGame()
