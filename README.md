@@ -7,4 +7,4 @@ NEW SUDOKU button will create a new sudoku using the current difficulty setting,
 The DIFFICULTY button toggles through the difficulty settings
 CHECK button will run tests, marking user-filled textboxes with issues by changing the textbox background to red. Any textbox with a value that already exists in the row, column, or box will be marked.
 
-If all test coplete successfully, the sudoku board will turn green.
+If all test complete successfully, the sudoku board will turn green.
